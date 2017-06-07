@@ -11,9 +11,10 @@ namespace DigestApi.Controllers
     public class TestController : ApiController
     {
         [Authorize]
-        public JToken get()
+        public HttpResponseHeader get()
         {
-            return JObject.Parse("{Name:\"prabaharan\",age:3}");
+            //return JObject.Parse("{Name:\"prabaharan\",age:3}");
+            return null;
         }
     }
 }
